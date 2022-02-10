@@ -44,8 +44,7 @@ namespace TestProjectFizzBuzz
         }
         [Test]
         public void TestFizzBuzzCounter2()
-        {
-            var expected = new List<string> { "1", "2", "Fizz" }; //continuous until your input number... o try to make a new test
+        {            
             List<string> actual = _sut.Counter(30);
             Assert.AreEqual(8, actual.Where(x => x == "Fizz").Count());
             Assert.AreEqual(4, actual.Where(x => x == "Buzz").Count());
